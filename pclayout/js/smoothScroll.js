@@ -9,11 +9,11 @@ links.forEach ((link) => {
      const section = document.querySelector (link.getAttribute('href'))
 
      if (section) {
-        seamless.scrollIntoView(document.querySelector("#target"), {
+           seamless.scrollIntoView(document.querySelector("#target"), {
         behavior: "smooth",
-        block: "center",
+        block: "start",
         inline: "center",
-    });
+    })
      }
     })
 })
